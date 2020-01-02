@@ -1,38 +1,158 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+
+  --titleGreen: rgba(0, 199, 14, 0.85)
+}
+
+body{
+  background-image: url("./images/background/blackmamba.png");
+}
+
+
+
+.banner{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+
+    height: 80px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar>a>img{
+    animation: colorfilter 10s infinite;
+    position: relative;
+    zoom: 125%;
+    margin-left: 5px;
+    top: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  color: var(--titleGreen);
+
+}
+
+.subtitle{
+  color: green;
+}
+
+.flex-row{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+    height: 640px;
+}
+
+.flex-column{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.btn{
+  background-color: black;
+  color: green;
+  border: rgba(0, 199, 14, 0.85) double 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-align{
+  text-align: center;
 }
+
+
+
+
+.consoleDescription{ background-image: none;
+        position:relative;
+        display: flex;
+        justify-content: space-around;
+        color: green;
+        background-size: 100% 100% ;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 30vh;
+        background-color: white;
+    }
+
+
+
+
+.brightness20{
+    filter: brightness(20%);
+}
+
+.abs{
+    position: absolute;
+}
+
+
+
+
+.imageJeux{
+    margin-top: 5%;
+    margin-bottom: 2%;
+
+}
+
+.imageJeux:hover{
+    margin-top: 7%;
+    position: center;
+    zoom: 150%;
+}
+
+.margin-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cancel{
+    color: white;
+    cursor: pointer;
+}
+.cancel:hover{
+    color:red;
+}
+.mr5pc{
+    margin-right: 5%;
+}
+
+.mr2pc{
+    margin-right: 2%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar>span>a{
+    color: green;
+}
+.navbar>span>a:hover{
+    color: white;
+    zoom: 150% ;
+}
+
+@keyframes colorfilter {
+
+    0%{filter: hue-rotate(0deg)}
+   25%{filter: hue-rotate(90deg)}
+   50%{ filter: hue-rotate(180deg)}
+    75%{ filter: hue-rotate(270deg)}
+    100%{ filter: hue-rotate(360deg)}
+}
+
+.mb2pc{
+    margin-bottom: 2%;
+
+}
+
+
